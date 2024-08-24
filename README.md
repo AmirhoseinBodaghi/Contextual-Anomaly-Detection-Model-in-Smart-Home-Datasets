@@ -1,8 +1,11 @@
-# Contextual Anomaly Detection in Smart Home Datasets
-This repo, has two codes: 1- SyntheticDataGeneration.ipynb , and 2- GraphBasedAnomalyDetection.ipynb, the first code create a synthetic smart home and the second code run an anomaly detection on it.
+Contextual Anomaly Detection in Smart Home Datasets:
+This repository contains two primary Jupyter notebooks: 1- SyntheticDataGeneration.ipynb and 2- GraphBasedAnomalyDetection.ipynb. The first notebook generates synthetic smart home data, while the second applies a graph-based anomaly detection method to the generated data.
 
-The explanations of the codes:
-1- SyntheticDataGeneration.ipynb :
-In this code we input a real smart home dataset and create a synthetic dataset that matches that well, and then do a conformance test to make sure it fits well. 
-2- GraphBasedAnomalyDetection.ipynb :
-In this code we run a graph based anomaly detection method over the synthetic data, and later to evaluate the method, we inject some synthetic anomalies into the synthetic dataset and then try to see how good the method can capture those synthetic anomalies by models (MD, LOF, and IF).
+Overview of the Notebooks:
+
+SyntheticDataGeneration.ipynb:
+In this notebook, we take an existing real-world smart home dataset as input and generate a synthetic dataset that closely replicates its characteristics. A conformance test is then performed to ensure that the synthetic data accurately reflects the properties of the original dataset.
+
+
+GraphBasedAnomalyDetection.ipynb:
+This notebook implements a graph-based anomaly detection technique on the synthetic dataset created in the first notebook. To evaluate the effectiveness of the method, we introduce synthetic anomalies into the dataset. The detection performance is assessed using several models, including Isolation Forest (IF), Local Outlier Factor (LOF), Mahalanobis Distance (MD), and One-Class Support Vector Machine (OCSVM).
